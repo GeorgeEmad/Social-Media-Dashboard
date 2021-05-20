@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="dark.css">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | [Social Media Dashboard]</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
+</head>
+
+<body>
+  <div class="top-back"></div>
+
+  <!-- Header and Dark theme button -->
+  <div class="header">
+    <div class="titles">
+      <h1 class="page-title">Social Media Dashboard</h1>
+      <div class="sub">Total Followers: 23,004</div>
+    </div>
+    <div class="btn-label">
+      <div class="lblmode sub">Dark Mode</div>
+      <label class="switch">
+        <input id="checkbox" type="checkbox">
+        <span class="slider"></span>
+      </label>
+    </div>
+
+  </div>
+
+  <!-- 1st row of overall followers -->
+  <div class="overall-followers">
+
+    <!-- Facebook card -->
+    <div class="overall-card facebookcard">
+      <div class="card-header-link">
+        <img class="facebook-icon" src="images/icon-facebook.svg" alt="facebook">
+        <div class="social-links  sub">@nathanf</div>
+      </div>
+      <div class="total-number">1987</div>
+      <div class="followers-text sub">Followers</div>
+      <div class="overall-trend-bar">
+        <img class="trend-arrow" src="images/icon-up.svg" alt="up">
+        <div class="trend-number-today up">12 Today</div>
+      </div>
+    </div>
+    <!-- Twitter card -->
+    <div class="overall-card twittercard">
+      <div class="card-header-link">
+        <img class="twitter-icon" src="images/icon-twitter.svg" alt="twitter">
+        <div class="social-links  sub">@nathanf</div>
+      </div>
+      <div class="total-number">1044</div>
+      <div class="followers-text sub">Followers</div>
+      <div class="overall-trend-bar">
+        <img class="trend-arrow" src="images/icon-up.svg" alt="up">
+        <div class="trend-number-today up">99 Today</div>
+      </div>
+    </div>
+    <!-- Instagram card -->
+    <div class="overall-card instacard">
+      <div class="card-header-link">
+        <img class="insta-icon" src="images/icon-instagram.svg" alt="insta">
+        <div class="social-links  sub">@realnathanf</div>
+      </div>
+      <div class="total-number">11k</div>
+      <div class="followers-text sub">Followers</div>
+      <div class="overall-trend-bar">
+        <img class="trend-arrow" src="images/icon-up.svg" alt="up">
+        <div class="trend-number-today up">1099 Today</div>
+      </div>
+    </div>
+    <!-- youtube card -->
+    <div class="overall-card youtubecard">
+      <div class="card-header-link">
+        <img class="youtube-icon" src="images/icon-youtube.svg" alt="youtube">
+        <div class="social-links  sub">Nathan F.</div>
+      </div>
+      <div class="total-number">8239</div>
+      <div class="followers-text sub">Subscribers</div>
+      <div class="overall-trend-bar">
+        <img class="trend-arrow" src="images/icon-down.svg" alt="down">
+        <div class="trend-number-today down">144 Today</div>  
+      </div>
+    </div>
+  </div>
+
+  <div class="today-statistics">
+    <h2 class="today-header">Overview - Today</h2>
+
+    <div class="today-cards">
+      
+      <!-- UPPER -->
+      <div class="stat-card face-views-card">
+        <div class="stat-type-conatiner">
+          <div class="stat-type sub">Page Views</div>
+          <img class="facebook-icon" src="images/icon-facebook.svg" alt="facebook">
+        </div>
+        <div class="stat-numbers-container">
+          <h2 class="stat-trend">87</h2>
+          <div class="overall-trend-bar">
+            <img class="trend-arrow" src="images/icon-up.svg" alt="up">
+            <div class="trend-number-today up">3%</div>  
+          </div>
+        </div>
+      </div>
+
+      <div class="stat-card face-likes-card">
+        <div class="stat-type-conatiner">
+          <div class="stat-type sub">Likes</div>
+          <img class="facebook-icon" src="images/icon-facebook.svg" alt="facebook">
+        </div>
+        <div class="stat-numbers-container">
+          <h2 class="stat-trend">52</h2>
+          <div class="overall-trend-bar">
+            <img class="trend-arrow" src="images/icon-down.svg" alt="down">
+            <div class="trend-number-today down">2%</div>  
+          </div>
+        </div>
+      </div>
+
+      <div class="stat-card insta-likes-card">
+        <div class="stat-type-conatiner">
+          <div class="stat-type sub">Likes</div>
+          <img class="insta-icon" src="images/icon-instagram.svg" alt="insta">
+        </div>
+        <div class="stat-numbers-container">
+          <h2 class="stat-trend">5462</h2>
+          <div class="overall-trend-bar">
+            <img class="trend-arrow" src="images/icon-up.svg" alt="up">
+            <div class="trend-number-today up">2257%</div>  
+          </div>
+        </div>
+      </div>
+
+      <div class="stat-card insta-views-card">
+        <div class="stat-type-conatiner">
+          <div class="stat-type sub">Profile Views</div>
+          <img class="insta-icon" src="images/icon-instagram.svg" alt="insta">
+        </div>
+        <div class="stat-numbers-container">
+          <h2 class="stat-trend">52k</h2>
+          <div class="overall-trend-bar">
+            <img class="trend-arrow" src="images/icon-up.svg" alt="up">
+            <div class="trend-number-today up">1375%</div>  
+          </div>
+        </div>
+      </div>
+
+      <!-- LOWER  -->
+      <div class="stat-card twitter-retweets-card">
+        <div class="stat-type-conatiner">
+          <div class="stat-type sub">Retweets</div>
+          <img class="twitter-icon" src="images/icon-twitter.svg" alt="twitter">
+        </div>
+        <div class="stat-numbers-container">
+          <h2 class="stat-trend">117</h2>
+          <div class="overall-trend-bar">
+            <img class="trend-arrow" src="images/icon-up.svg" alt="up">
+            <div class="trend-number-today up">303%</div>  
+          </div>
+        </div>
+      </div>
+
+      <div class="stat-card twitter-likes-card">
+        <div class="stat-type-conatiner">
+          <div class="stat-type sub">Likes</div>
+          <img class="twitter-icon" src="images/icon-twitter.svg" alt="twitter">
+        </div>
+        <div class="stat-numbers-container">
+          <h2 class="stat-trend">507</h2>
+          <div class="overall-trend-bar">
+            <img class="trend-arrow" src="images/icon-up.svg" alt="up">
+            <div class="trend-number-today up">553%</div>  
+          </div>
+        </div>
+      </div>
+
+
+      <div class="stat-card youtube-likes-card">
+        <div class="stat-type-conatiner">
+          <div class="stat-type sub">Likes</div>
+          <img class="youtube-icon" src="images/icon-youtube.svg" alt="youtube">
+        </div>
+        <div class="stat-numbers-container">
+          <h2 class="stat-trend">107</h2>
+          <div class="overall-trend-bar">
+          <img class="trend-arrow" src="images/icon-down.svg" alt="down">
+          <div class="trend-number-today down">19%</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="stat-card youtube-views-card">
+        <div class="stat-type-conatiner">
+          <div class="stat-type sub">Total Views</div>
+          <img class="youtube-icon" src="images/icon-youtube.svg" alt="youtube">
+        </div>
+        <div class="stat-numbers-container">
+          <h2 class="stat-trend">1407</h2>
+          <div class="overall-trend-bar">
+            <img class="trend-arrow" src="images/icon-down.svg" alt="down">
+            <div class="trend-number-today down">12%</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+</body>
+<script src="app.js"></script>
+
+</html>

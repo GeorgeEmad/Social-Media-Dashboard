@@ -1,0 +1,37 @@
+:root{
+--Toggle-dark: linear gradient hsl(210, 78%, 56%) to hsl(146, 68%, 55%);
+--VeryDarkBlue: hsl(230, 17%, 14%); /* (BG) */
+--VeryDarkBlue-b : hsl(232, 19%, 15%); /* (Top BG Pattern) */
+--DarkDesaturatedBlue : hsl(228, 28%, 20%); /* (Card BG) */
+--cardhovering: hsl(231, 22%, 33%); /*  (Card hover) */
+--DesaturatedBlue: hsl(228, 34%, 66%); /* (Text) */
+--White : hsl(0, 0%, 100%); /* (Text) */
+}
+
+body.dark-theme {
+    color: var(--White);
+    background: var(--VeryDarkBlue);
+  }
+ 
+  body.dark-theme .top-back{
+    background-color: var(--VeryDarkBlue-b);
+  }
+  body.dark-theme .overall-card{
+    background-color: var(--DarkDesaturatedBlue);
+  }
+  body.dark-theme .sub{
+    color: var(--DesaturatedBlue);
+  }
+  
+  body.dark-theme .total-number{
+    color: var(--White);
+  }
+  body.dark-theme h1{
+    color: var(--White);
+  }  
+  body.dark-theme h2{
+    color: var(--White);
+  }
+  body.dark-theme .stat-card{
+    background-color: var(--DarkDesaturatedBlue);
+  }
